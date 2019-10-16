@@ -25,7 +25,7 @@ The instruction set was designed specificially for this project, and has been op
 * **BCH_OUT**- Branch to instruction location indicated in instruction if OUT register is zero.  Else continue.
 
 ## Testing
-At the complexity of the project, it is impossible to easily debug with a simple oscilloscope or logic analyzer.  By using I2C and an Arduino script, the Arduino is used to load program code into the memory chip, as well as read all pins and internal nodes of each GPAK IC to pull out all relevent information into text.  The arduino program also allows you to step through the program for debugging.
+At the complexity of the project, it is impossible to easily debug with a simple oscilloscope or logic analyzer.  By using I2C and an ![Arduino script](Computer_debugger.ino), the Arduino is used to load program code into the memory chip, as well as read all pins and internal nodes of each GPAK IC to pull out all relevent information into text.  The arduino program also allows you to step through the program for debugging.
 
 
 ![debugging example](/images/gif_arduino_debug.gif)
