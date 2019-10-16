@@ -14,15 +14,15 @@ The instruction set was designed specificially for this project, and has been op
 ![ISA Truth Table](/images/ISA_Truth_Table.jpg)
 
 ## List of Commands
-*LDa C- Load Register_A with constant.  The constant is packaged in the 4 LSB of the instruction.  
-*LDa P- Load Register_A from pointer.  The pointer location is packaged in the 4 LSB of the instruction.     
-*LDb C- Load Register_B with constant.  The constant is packaged in the 4 LSB of the instruction.     
-*LDb P- Load Register_B from pointer.  The pointer location is packaged in the 4 LSB of the instruction.
-*STa P- Store the value in Register_A to memory at pointer location indicated in instruction.   
-*Add & STaP- Add Register_A to Register_B and store result to memory at pointer location indicated in instruction. 
-*OUTA- latch contents of Register_A to output    
-*NOP- No Operation
-*BCH_OUT- Branch to instruction location indicated in instruction if OUT register is zero.  Else continue.
+* LDa C- Load Register_A with constant.  The constant is packaged in the 4 LSB of the instruction.  
+* LDa P- Load Register_A from pointer.  The pointer location is packaged in the 4 LSB of the instruction.     
+* LDb C- Load Register_B with constant.  The constant is packaged in the 4 LSB of the instruction.     
+* LDb P- Load Register_B from pointer.  The pointer location is packaged in the 4 LSB of the instruction.
+* STa P- Store the value in Register_A to memory at pointer location indicated in instruction.   
+* Add & STaP- Add Register_A to Register_B and store result to memory at pointer location indicated in instruction. 
+* OUTA- latch contents of Register_A to output    
+* NOP- No Operation
+* BCH_OUT- Branch to instruction location indicated in instruction if OUT register is zero.  Else continue.
 
 ## Testing
 At the complexity of the project, it is impossible to easily debug with a simple oscilloscope or logic analyzer.  By using I2C and an Arduino script, the Arduino is used to load program code into the memory chip, as well as read all pins and internal nodes of each GPAK IC to pull out all relevent information into text.  The arduino program also allows you to step through the program for debugging.
