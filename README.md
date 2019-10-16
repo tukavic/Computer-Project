@@ -11,7 +11,7 @@ The [SLG46826](https://www.dialog-semiconductor.com/products/slg46826) GreenPAK 
 ## ISA
 The instruction set was designed specificially for this project, and has been optimized to the various tradeoffs required with the limited resources of the ICs.  Currently there are 8 Instructions + a NOP command.  Below is the truth table that illustrates the CTRL logic as it manages control flow.  All memory access instructions (LDa P, LDb P, STa P, ADD&STaP) are two cycle instructions; therefore the hardware has accomidations for such commands.
 
-![ISA Truth Table](/images/ISA_Truth_Table.JPG)
+![ISA Truth Table](/images/ISA Truth Table.jpg)
 
 ## List of Commands
 *LDa C- Load Register_A with constant.  The constant is packaged in the 4 LSB of the instruction.  
