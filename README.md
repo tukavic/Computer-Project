@@ -1,7 +1,7 @@
 # Computer-Project
 An 8 bit processing machine demonstrating computer architecture fundamentals
  
-
+![The Real Deal](/images/Computer_img.JPG)
 
 ![High Level Block Diagram](/images/Computer_r004_a.JPG)
 
@@ -9,7 +9,7 @@ An 8 bit processing machine demonstrating computer architecture fundamentals
 The [SLG46826](https://www.dialog-semiconductor.com/products/slg46826) GreenPAK device was used as the primary IC for building the computer.  It is a programmable device with both LUTs and DFFs such that you can build up functional blocks such as the Program counter, or a portion (three bits) of the ALU.  The only other IC used was the parallel memory SRAM HY6116.  Program and data memory are shared on the same memory chip, and thus, the architecture is [Von Neumann Architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture).
 
 ## ISA
-The instruction set was designed specificially for this project, and has been optimized to the various tradeoffs required with the limited resources of the ICs.  Currently there are 8 Instructions + a NOP command.  Below is the truth table that illustrates the CTRL logic as it manages control flow.  All memory access instructions (LDa P, LDb P, STa P, ADD&STaP) are two cycle instructions; therefore the hardware has accomidations for such commands.
+The instruction set was designed specifically for this project, and has been optimized to the various tradeoffs required with the limited resources of the ICs.  Currently there are 8 Instructions + a NOP command.  Below is the truth table that illustrates the CTRL logic as it manages control flow.  All memory access instructions (LDa P, LDb P, STa P, ADD&STaP) are two cycle instructions; therefore the hardware has accommodations for such commands.
 
 ![ISA Truth Table](/images/ISA_Truth_Table.jpg) 
 
@@ -25,7 +25,7 @@ The instruction set was designed specificially for this project, and has been op
 * **BCH_OUT**- Branch to instruction location indicated in instruction if OUT register is zero.  Else continue.
 
 ## Testing
-At the complexity of the project, it is impossible to easily debug with a simple oscilloscope or logic analyzer.  By using I2C and an ![Arduino script](Computer_debugger.ino), the Arduino is used to load program code into the memory chip, as well as read all pins and internal nodes of each GPAK IC to pull out all relevent information into text.  The arduino program also allows you to step through the program for debugging.
+At the complexity of the project, it is impossible to easily debug with a simple oscilloscope or logic analyzer.  By using I2C and an ![Arduino script](Computer_debugger.ino), the Arduino is used to load program code into the memory chip, as well as read all pins and internal nodes of each GPAK IC to pull out all relevant information into text.  The arduino program also allows you to step through the program for debugging.
 
 
 ![debugging example](/images/gif_arduino_debug.gif)
