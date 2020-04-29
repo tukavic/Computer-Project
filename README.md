@@ -34,3 +34,9 @@ At the complexity of the project, it is impossible to easily debug with a simple
 The configurable GreenPAK has a nice GUI interface.  Here are a few examples:
 ### ALU_ONE
 ![ALU_ONE](/images/ALU_6_one_72.jpg)
+
+### Control Logic
+![CTRL](/images/CTRL.png)
+
+### Data Pointer
+![Data Pointer](/images/DP.png)
