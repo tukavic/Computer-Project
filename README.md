@@ -1,7 +1,7 @@
 # Computer-Project
 An 8 bit processing machine demonstrating computer architecture fundamentals
  
-![The Real Deal](/images/Computer_img.JPG)
+![The Real Deal](/images/Computer_img.jpg)
 
 ![High Level Block Diagram](/images/Computer_r004_a.JPG)
 
